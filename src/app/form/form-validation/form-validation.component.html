@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- View user ---->
+
+<style>
+    .switch {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    }
+    /* Hide default HTML checkbox */
+    .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+    /* The slider */
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(85, 82, 82);
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgb(207, 205, 205);
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+    input:checked + .slider {
+    background-color: #1976d2;
+    }
+    input:focus + .slider {
+    box-shadow: 0 0 1px #1976d2;
+    }
+    input:checked + .slider:before {
+    -webkit-transform: translateX(27px);
+    -ms-transform: translateX(27px);
+    transform: translateX(29px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+    border-radius: 50px;
+    height: 20px;
+    }
+    .slider.round:before {
+    border-radius: 50%;
+    color: black;
+    }
+    td, th {
+    border-bottom: thin;
+    border-width: thin;
+    border-color: rgb(250, 248, 248);
+    size: inherit;
+    padding-right: 0px;
+    padding-left: 0px;
+    align-items: center;
+    }
+    .btn{
+    padding: 1;
+    }
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    align-items: center;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    /* Style the search field */
+    form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(253, 252, 252);
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    height: 32px;
+    }
+    /* Style the submit button */
+    form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgb(253, 253, 253);
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    height: 32px;
+    }
+    form.example button:hover {
+    background: #0b7dda;
+    }
+    /* Clear floats */
+    form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-right: 5px;
+    }
+ </style>
+ 
+ <div class="row">
+ <!-- column -->
+ <div class="col-lg-12">
+    <div class="card">
+       <div class="card-body">
+          <div class="row d-flex flex-row-reverse"  >
+             <a class="btn btn-secondary btn-i btn-sm " [routerLink]="['./basic/basic.component']"
+                style="font-size: 15px;margin-left: 5px;margin-right: 5px;">
+             <img src="../../../assets/excel.svg" style="width: 20px;"></a><a class="btn btn-warning btn-sm" [routerLink]="['/forms/formbasic']"
+                style="font-size: 15px; margin-left: 5px;"><img src="../../../assets/add.svg" style="width: 20px;">  Add User</a>
+             <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search" ></i></button>
+             </form>
+          </div>
+          <div class="table-responsive">
+             <table class="table" style="border-spacing: 0px; border-width: 0; padding: 0; border-width: 0;">
+                <thead>
+                   <tr>
+                      <th>UID</th>
+                      <th>picture</th>
+                      <th>Name</th>
+                      <th>Phone no.</th>
+                      <th>Status</th>
+                      <th></th>
+                      <th> </th>
+                      <th></th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                      <td>1</td>
+                      <td><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                      <td>
+                         <h6>Shubham Kaushik</h6>
+                         <small class="text-muted">Web Designer</small>
+                      </td>
+                      <td>8546851236</td>
+                      <td>
+                         <label class="switch btn">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked >
+                         <span class="slider round"></span>
+                         </label>
+                      </td>
+                      <td>
+                         <button type="button" class="btn btn-primary  p-1 m-1 "  [routerLink]="['/forms/multiselect']"> <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                         <button type="button" class="btn btn-success  p-1 m-1" [routerLink]="['/viewuser']" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                         <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                      </td>
+                   </tr>
+                   <td>2</td>
+                   <td><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                   <td>
+                      <h6>Raj Sharma</h6>
+                      <small class="text-muted">Builder</small>
+                   </td>
+                   <td>5874123698</td>
+                   <td>
+                      <label class="switch">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <span class="slider round"></span>
+                      </label>
+                   </td>
+                   <td>
+                       
+                      <button type="button" class="btn btn-primary  p-1 m-1 "[routerLink]="['/forms/multiselect']" > <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                      <button type="button" class="btn btn-success  p-1 m-1" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                      <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                   </td>
+                   <tr>
+                      <td>3</td>
+                      <td><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                      <td>
+                         <h6>Shyam Verma</h6>
+                         <small class="text-muted">Brocker</small>
+                      </td>
+                      <td>7845126985</td>
+                      <td>
+                         <label class="switch">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                         <span class="slider round"></span>
+                         </label>
+                      </td>
+                      <td>
+                         <button type="button" class="btn btn-primary  p-1 m-1 " [routerLink]="['/forms/multiselect']"> <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                         <button type="button" class="btn btn-success  p-1 m-1" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                         <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>4</td>
+                      <td><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                      <td>
+                         <h6>Vipul Agrawal</h6>
+                         <small class="text-muted">Constructor</small>
+                      </td>
+                      <td>8751236985</td>
+                      <td>
+                         <label class="switch">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                         <span class="slider round"></span>
+                         </label>
+                      </td>
+                      <td>
+                         <button type="button" class="btn btn-primary  p-1 m-1 " [routerLink]="['/forms/multiselect']"> <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                         <button type="button" class="btn btn-success  p-1 m-1" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                         <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>5</td>
+                      <td><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                      <td>
+                         <h6>Robbin Verma</h6>
+                         <small class="text-muted">Brocker</small>
+                      </td>
+                      <td>7845126985</td>
+                      <td>
+                         <label class="switch">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                         <span class="slider round"></span>
+                         </label>
+                      </td>
+                      <td>
+                         <button type="button" class="btn btn-primary  p-1 m-1 "[routerLink]="['/forms/multiselect']" > <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                         <button type="button" class="btn btn-success  p-1 m-1" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                         <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>6</td>
+                      <td ><span class="round round-success p-0"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                      <td>
+                         <h6>Lucky Shigh</h6>
+                         <small class="text-muted">Seller</small>
+                      </td>
+                      <td>78456698521</td>
+                      <td>
+                         <label class="switch">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                         <span class="slider round"></span>
+                         </label>
+                      </td>
+                      <td>
+                         <button type="button" class="btn btn-primary  p-1 m-1 " [routerLink]="['/forms/multiselect']"> <img src="../../../assets/visibility.svg" style="width: 20px;"> </button>
+                         <button type="button" class="btn btn-success  p-1 m-1" ><img src="../../../assets/edit.svg" style="width: 20px;"></button>
+                         <button type="button" class="btn btn-danger p-1 m-1 "><img src="../../../assets/delete.svg" style="width: 20px;"></button>
+                      </td>
+                   </tr>
+                   <tr></tr>
+                </tbody>
+             </table>
+          </div>
+       </div>
+    </div>
+ </div>
+    <div class="row" style="height: 600px;">
+
+    </div>
+    <div class="row" style="height: 600px;">
+
+    </div>
+    <!-- column -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Bordered Table</h4>
+                <h6 class="card-subtitle">Add
+                    <code>.table-bordered</code>for borders on all sides of the table and cells.</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Deadline</th>
+                                <th class="text-nowrap">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunar probe project</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-danger" style="width: 35%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>May 15, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dream successful plan</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-warning" style="width: 50%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>July 1, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Office automatization</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-success" style="width: 100%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Apr 12, 2015</td>
+                                <td class="text-nowrap">
+                                    inactive
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The sun climbing plan</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-primary" style="width: 70%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Aug 9, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Open strategy</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-info" style="width: 85%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Apr 2, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tantas earum numeris</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-inverse" style="width: 50%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>July 11, 2015</td>
+                                <td class="text-nowrap">
+                                    inactive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- column -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Table</h4>
+                <h6 class="card-subtitle">Add
+                    <code>.table-striped</code>for borders on all sides of the table and cells.</h6>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Deadline</th>
+                                <th class="text-nowrap">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunar probe project</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-danger" style="width: 35% ;height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>May 15, 2015</td>
+                                <td class="text-nowrap">
+                                    inactive
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dream successful plan</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-warning" style="width: 50%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>July 1, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Office automatization</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-success" style="width: 100%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Apr 12, 2015</td>
+                                <td class="text-nowrap">
+                                    inactive
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The sun climbing plan</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-primary" style="width: 70%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Aug 9, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Open strategy</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-info" style="width: 85%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>Apr 2, 2015</td>
+                                <td class="text-nowrap">
+                                    active
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tantas earum numeris</td>
+                                <td>
+                                    <div class="progress progress-xs margin-vertical-10 ">
+                                        <div class="progress-bar bg-inverse" style="width: 50%; height:6px;"></div>
+                                    </div>
+                                </td>
+                                <td>July 11, 2015</td>
+                                <td class="text-nowrap">
+                                    inactive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- column -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Responsive Table </h4>
+                <h6 class="card-subtitle">Create responsive tables by wrapping any
+                    <code>.table</code> in
+                    <code>.table-responsive </code>
+                </h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Invoice</th>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="javascript:void(0)">Order #26589</a>
+                                </td>
+                                <td>Herman Beck</td>
+                                <td>
+                                    <span class="text-muted">
+                                        <i class="fa fa-clock-o"></i> Oct 16, 2017</span>
+                                </td>
+                                <td>$45.00</td>
+                                <td>
+                                    <div class="label label-table label-success">Paid</div>
+                                </td>
+                                <td>EN</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="javascript:void(0)">Order #58746</a>
+                                </td>
+                                <td>Mary Adams</td>
+                                <td>
+                                    <span class="text-muted">
+                                        <i class="fa fa-clock-o"></i> Oct 12, 2017</span>
+                                </td>
+                                <td>$245.30</td>
+                                <td>
+                                    <div class="label label-table label-danger">Shipped</div>
+                                </td>
+                                <td>CN</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="javascript:void(0)">Order #98458</a>
+                                </td>
+                                <td>Caleb Richards</td>
+                                <td>
+                                    <span class="text-muted">
+                                        <i class="fa fa-clock-o"></i> May 18, 2017</span>
+                                </td>
+                                <td>$38.00</td>
+                                <td>
+                                    <div class="label label-table label-info">Shipped</div>
+                                </td>
+                                <td>AU</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="javascript:void(0)">Order #32658</a>
+                                </td>
+                                <td>June Lane</td>
+                                <td>
+                                    <span class="text-muted">
+                                        <i class="fa fa-clock-o"></i> Apr 28, 2017</span>
+                                </td>
+                                <td>$77.99</td>
+                                <td>
+                                    <div class="label label-table label-success">Paid</div>
+                                </td>
+                                <td>FR</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- column -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Contextual Classes</h4>
+                <h6 class="card-subtitle">Use classes
+                    <code>( .table-active, .table-success, .table-info, .table-warning, .table-danger )</code> to color table rows or individual cells</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td scope="row">1</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">2</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">3</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">4</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td scope="row">5</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
