@@ -1,0 +1,26 @@
+<div class="container mt-5" style="background-color: white;">
+  <h2>List of Banners</h2>
+  <table class="table">
+      <thead>
+          
+          <th>Id</th>
+          <th>Title</th>
+          <th>Image</th>
+          <th>Hyper link</th>
+          <th>posted date + Time</th>
+          
+      </thead>
+      <tbody>
+          <tr *ngFor="let banner of banners">
+              <td>{{banner.id }}</td>
+              <td>{{ banner.title}}</td>
+              <td><img _ngcontent-ccs-c119="" alt="user" width="50" height="50" border-radius="50" src="{{banner.image}}" style="
+                  border: radius 50px;"></td>
+              
+              <td>{{alert.hyper_link }}</td>
+              
+              <td>{{banner.created_at }}</td>
+          </tr>
+      </tbody>
+  </table>
+  </div>

@@ -1,0 +1,152 @@
+<!----------------view alert-->
+<div class="row" style="background-color: white;">
+    
+<div class="card-body">
+      
+	<h4 _ngcontent-c9=""><a _ngcontent-c9=""><i _ngcontent-c9="" class="fa fa-arrow-circle-left back-button"></i></a> </h4>
+	<div _ngcontent-c9="" class="form-group row">
+		<div _ngcontent-c9="" class="col-sm-5">
+			<label _ngcontent-c9="">Select Type<span _ngcontent-c9="" class="required">*</span></label>
+			 <select _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" id="class" name="class" placeholder="Class">
+             <option>builder</option>
+             <option>constructor</option>
+             <option>Seller</option>
+             <option>Brocker</option>
+             <option>Admin</option>
+
+            </select>
+		</div>
+		<div _ngcontent-c9="" class="col-sm-5">
+			<label _ngcontent-c9="">Select user<span _ngcontent-c9="" class="required">*</span></label>
+			<select _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" id="division" name="div" placeholder="Division">
+			<!----><option _ngcontent-c9="" value="0: Object">Select</option>
+			</select>
+		</div>
+		
+		<button _ngcontent-c9="" class="btn btn-info btn-round" style="margin:25px;">Search</button>
+	</div>
+
+
+	<div _ngcontent-c9="" class="table-responsive">
+		<table _ngcontent-c9="" class="table table-striped table-bordered full-data-table">
+			<thead _ngcontent-c9="">
+				<tr _ngcontent-c9="">
+					<th _ngcontent-c9="">
+						
+        <a class="text-nowrap" style="cursor: pointer">
+            S.No
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+						
+        <a class="text-nowrap" style="cursor: pointer">
+            Title
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+						
+        <a class="text-nowrap" style="cursor: pointer">
+            Description
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+						
+        <a class="text-nowrap" style="cursor: pointer">
+            Hyperlink
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+					
+        <a class="text-nowrap" style="cursor: pointer">
+            Posted By
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+					
+        <a class="text-nowrap" style="cursor: pointer">
+            Time
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+						
+        <a class="text-nowrap" style="cursor: pointer">
+            IP
+            <!---->
+            <!---->
+        </a>
+					</th>
+					<th _ngcontent-c9="">
+					
+        <a class="text-nowrap" style="cursor: pointer">
+            
+            <!---->
+            <!---->
+        </a>
+					</th>
+				</tr>
+			</thead>
+			<tbody _ngcontent-c9="">
+				
+			</tbody>
+		</table>
+	</div>
+
+    </div>
+
+</div>
+
+<div class="row" style="height: 600px;">
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Toastr Success</h4>
+                <h6 class="card-subtitle">This is the simpel toastr with success message</h6>
+                <button class="btn btn-success" (click)="showSuccess()">Toastr Success</button>
+            </div>
+        </div>
+    </div> 
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Toastr Danger</h4>
+                <h6 class="card-subtitle">This is the simpel toastr with Danger message</h6>
+                <button class="btn btn-danger" (click)="showError()">Toastr Danger Error</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Toastr Warning</h4>
+                <h6 class="card-subtitle">This is the simpel toastr with Warning message</h6>
+                <button class="btn btn-warning" (click)="showWarning()">Toastr Warning</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Toastr Info</h4>
+                <h6 class="card-subtitle">This is the simpel toastr with Info message</h6>
+                <button class="btn btn-info" (click)="showInfo()">Toastr Info</button>
+            </div>
+        </div>
+    </div>
+
+</div>

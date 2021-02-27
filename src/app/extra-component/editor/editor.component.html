@@ -1,0 +1,82 @@
+
+
+<style>
+
+    html,body {
+        margin: 0;
+        height: 100%;
+      }
+      
+      #container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      #header {
+        height: 40px;
+        background: red;
+      }
+      
+      #footer {
+        height: 40px;
+        background: red;
+      }
+      
+      #editor-container {
+        height: 100%;
+      }
+      
+      #editor {
+        height: 100%;
+      }
+</style>
+
+
+
+<div class="row-fluid" style="background-color: white;">
+
+  <div class="row" style=" padding-top : 2%; padding-right : 2%; padding-left :2%">
+    
+    <div class="col-6">
+      <label class="form-label" for="customFile">Title</label>
+      <input type="text" class="form-control" id="customFile" style="font-size: 8px;" />
+    </div>
+    <div class="col-6">
+      <label class="form-label" for="customFile">Add Image</label>
+<input type="file" class="form-control" id="customFile" style="font-size: 12px;" />
+
+    </div>
+    
+</div>
+
+    <div class="row">
+      
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Add alert</h4>
+                    <h6 class="card-subtitle">
+                        <a href="https://github.com/KillerCodeMonkey/ngx-quill" target="_blank">Official website</a>
+                    </h6>
+                    <quill-editor style="height: 600px;"></quill-editor>
+                </div>
+           
+            </div>
+            <div class="row"  style="padding-left: 2%; padding-right:2%; padding-bottom : 2%">
+               
+              <div class="col-6">
+                <label class="form-label" for="customFile">Add Hyperlink</label>
+              <input type="text" class="form-control" id="customFile"  placeholder="Hyperlink"/>
+
+              </div>
+            
+             
+
+            </div>
+            <button type="button" class="btn btn-info" style="margin-left: 2%; margin-bottom: 2%;">Add</button>
+        </div>
+    </div>
+
+</div>
