@@ -1,0 +1,40 @@
+<div class="container mt-5" style="background-color: white;">
+<h2>List of alerts</h2>
+<table class="table">
+    <thead>
+        <th>S no.</th>
+        <th>Title</th>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Hyper link</th>
+        <th>Posted By</th>
+        <th>posted date + Time</th>
+        <th>IP</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let alert of alerts">
+            <td>{{alert.id }}</td>
+            <td>{{ alert.title}}</td>
+            <td><img _ngcontent-ccs-c119="" alt="user" width="50" height="50" border-radius="50" src="{{alert.image}}" style="
+                border: radius 50px;"></td>
+            <td>{{alert.description }}</td>
+            <td>{{alert.hyper_link }}</td>
+            <td>{{alert.posted_by }}</td>
+            <td>{{alert.created_at }}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

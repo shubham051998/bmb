@@ -1,0 +1,101 @@
+
+
+
+
+<div style="width: 500px; margin: auto;">
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="staff.name"
+            name="name"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="phone">phone</label>
+          <input
+            class="form-control"
+            id="description"
+            required
+            [(ngModel)]="staff.phone"
+            name="phone"
+          />
+          <div class="submit-form">
+            <div *ngIf="!submitted">
+              <div class="form-group">
+                <label for="password">password</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="password"
+                  required
+                  [(ngModel)]="staff.password"
+                  name="password"
+                />
+              </div>
+              <div class="submit-form">
+                <div *ngIf="!submitted">
+                  <div class="form-group">
+                    <label for="email">email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      required
+                      [(ngModel)]="staff.email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="submit-form">
+                    <div *ngIf="!submitted">
+                      <div class="form-group">
+                        <label for="status">status</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="status"
+                          required
+                          [(ngModel)]="staff.status"
+                          name="status"
+                        />
+                      </div>
+                      <div class="submit-form">
+                        <div *ngIf="!submitted">
+                          <div class="form-group">
+                            <label for="image">image</label>
+                            <input type="file" id="file" accept="image/*" [(ngModel)]="staff.image" name="File" (change)="handleFileInput($event.target.files)">
+                          </div>
+                      <div class="submit-form">
+                        <div *ngIf="!submitted">
+                          <div class="form-group">
+                            <label for="remarks">remark</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="remarks"
+                              required
+                              [(ngModel)]="staff.remarks"
+                              name="remarks"
+                            />
+                          </div>
+                          <div class="submit-form">
+                            <div *ngIf="!submitted">
+                             
+        </div>
+  
+        <button (click)="createProduct()" class="btn btn-success">Create</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h3>You successfully created a product!</h3>
+        <button class="btn btn-success" (click)="newProduct()">New..</button>
+      </div>
+    </div>
+  </div>
+  
