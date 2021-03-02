@@ -1,11 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { AddService } from '../../../apps/services/service2/add.service';
+import {ToastrComponent} from '../../../extra-component/toastr/toastr.component';
+
+
+
+
 @Component({
   selector: 'app-adduser',
   templateUrl: './adduser.component.html',
   styleUrls: ['./adduser.component.css']
 })
+
 export class AdduserComponent implements OnInit {
+ 
   
     staff = {
       name: '',
@@ -16,6 +23,7 @@ export class AdduserComponent implements OnInit {
       password:'',
       remarks:'',
       status: '',
+      documents_url:'',
     };
     submitted = false;
   fileToUpload: File;
@@ -36,6 +44,7 @@ export class AdduserComponent implements OnInit {
         remarks: this.staff.remarks,
         profile_picture: this.staff.profile_picture,
         status:this.staff.status,
+        document:this.staff.documents_url,
       };
   
       this.addservice.create(data)
@@ -60,6 +69,7 @@ export class AdduserComponent implements OnInit {
         password:'',
         remarks:'',
         status:'',
+        documents_url:'',
       };
     }
     handleFileInput(files: FileList) {
@@ -68,7 +78,7 @@ export class AdduserComponent implements OnInit {
   
     uploadFileToActivity() {
   
-      this._dishAddService.postFile(this.fileToUpload).subscribe(data => {
+      this._dishAddService.postFile(this.fileToUpload).subscribe(() => {
   
         }, error => {
           console.log(error);

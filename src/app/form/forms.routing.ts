@@ -4,11 +4,11 @@ import { BasicComponent } from './form-basic/basic.component';
 import { FormvalComponent } from './form-validation/form-validation.component';
 import { MultiselectComponent } from './multiselect/multiselect.component';
 import { ViewuserComponent2} from './viewuser/viewuser2/viewuser2.component';
-<<<<<<< HEAD
-import { AdduserComponent } from './adduser/adduser/adduser.component';
-=======
 
->>>>>>> origin
+import { AdduserComponent } from './adduser/adduser/adduser.component';
+
+
+
 export const FormsRoutes: Routes = [
     {
         path: '',
@@ -25,7 +25,6 @@ export const FormsRoutes: Routes = [
                 }
             },
             {
-<<<<<<< HEAD
                 path: 'adduser',
                 component: AdduserComponent,
                 data: {
@@ -37,8 +36,7 @@ export const FormsRoutes: Routes = [
                 }
             },
             {
-=======
->>>>>>> origin
+
                 path: 'viewuser2',
                 component: ViewuserComponent2,
                 data: {

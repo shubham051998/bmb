@@ -9,7 +9,7 @@ import { QuillModule } from 'ngx-quill';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppsRoutes } from './apps.routing';
-import { TaskboardComponent } from './taskboard/taskboard.component';
+
 import { FullcalendarComponent } from './fullcalendar/fullcalendar.component';
 import { ImageViewComponent } from './image-view/image-view.component';
 import { Image2Component } from './image2/image2.component';
@@ -29,10 +29,9 @@ import { AppModule } from '../app.module';
         DragDropModule,
         RouterModule.forChild(AppsRoutes)
     ],
-<<<<<<< HEAD
-    declarations: [TaskboardComponent, FullcalendarComponent, ImageViewComponent, Image2Component,]
-=======
-    declarations: [TaskboardComponent, FullcalendarComponent, ImageViewComponent, Image2Component, NgModule]
->>>>>>> origin
+ 
+    declarations: [ FullcalendarComponent, ImageViewComponent, Image2Component,]
+
+ 
 })
 export class AppsModule { }
