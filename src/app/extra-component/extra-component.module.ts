@@ -12,7 +12,10 @@ import { ToastrComponent } from './toastr/toastr.component';
 import { UploadComponent } from './file-upload/upload.component';
 import { EditorComponent } from './editor/editor.component';
 import { DragComponent } from './drag-n-drop/drag.component';
+<<<<<<< HEAD
 import { ViewalertComponent } from './viewalert/viewalert/viewalert.component';
+=======
+>>>>>>> origin
 
 @NgModule({
   imports: [
@@ -29,8 +32,12 @@ import { ViewalertComponent } from './viewalert/viewalert/viewalert.component';
   declarations: [
     ToastrComponent,
     EditorComponent,
+<<<<<<< HEAD
     DragComponent,
     ViewalertComponent,
+=======
+    DragComponent
+>>>>>>> origin
   ]
 })
 export class ExtraComponentModule {}

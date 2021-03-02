@@ -4,7 +4,11 @@ import { ToastrComponent } from './toastr/toastr.component';
 import { UploadComponent } from './file-upload/upload.component';
 import { EditorComponent } from './editor/editor.component';
 import { DragComponent } from './drag-n-drop/drag.component';
+<<<<<<< HEAD
 import { ViewalertComponent } from './viewalert/viewalert/viewalert.component';
+=======
+
+>>>>>>> origin
 export const ExtraComponentsRoutes: Routes = [
   {
     path: '',
@@ -21,6 +25,7 @@ export const ExtraComponentsRoutes: Routes = [
         }
       },
       {
+<<<<<<< HEAD
         path: 'viewalert',
         component: ViewalertComponent,
         data: {
@@ -32,6 +37,8 @@ export const ExtraComponentsRoutes: Routes = [
         }
       },
       {
+=======
+>>>>>>> origin
         path: 'upload',
         component: UploadComponent,
         data: {

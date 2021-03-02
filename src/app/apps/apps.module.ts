@@ -29,6 +29,10 @@ import { AppModule } from '../app.module';
         DragDropModule,
         RouterModule.forChild(AppsRoutes)
     ],
+<<<<<<< HEAD
     declarations: [TaskboardComponent, FullcalendarComponent, ImageViewComponent, Image2Component,]
+=======
+    declarations: [TaskboardComponent, FullcalendarComponent, ImageViewComponent, Image2Component, NgModule]
+>>>>>>> origin
 })
 export class AppsModule { }

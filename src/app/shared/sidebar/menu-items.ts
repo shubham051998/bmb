@@ -32,6 +32,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
+<<<<<<< HEAD
                 path: '/forms/adduser',
                 title: 'Add user',
                 icon: '',
@@ -42,6 +43,8 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
+=======
+>>>>>>> origin
                 path: '/component/typehead',
                 title: 'Form Typehead',
                 icon: '',
@@ -157,8 +160,13 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
+<<<<<<< HEAD
                 path: '/extra-component/viewalert',
                 title: 'View alert',
+=======
+                path: '/extra-component/toastr',
+                title: 'View Alert',
+>>>>>>> origin
                 icon: '',
                 class: '',
                 label: '',
@@ -166,8 +174,21 @@ export const ROUTES: RouteInfo[] = [
                 extralink: false,
                 submenu: []
             },
+<<<<<<< HEAD
            
           
+=======
+            {
+                path: '/extra-component/dragndrop',
+                title: 'Drag n Drop',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            }
+>>>>>>> origin
         ]
     },
    

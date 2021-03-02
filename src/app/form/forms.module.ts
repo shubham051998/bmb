@@ -12,7 +12,10 @@ import { FormvalComponent } from './form-validation/form-validation.component';
 import { MultiselectComponent } from './multiselect/multiselect.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { CustomFormsModule } from 'ngx-custom-validators';
+<<<<<<< HEAD
 import { AdduserComponent } from './adduser/adduser/adduser.component';
+=======
+>>>>>>> origin
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { AdduserComponent } from './adduser/adduser/adduser.component';
         BasicComponent,
         FormvalComponent,
         MultiselectComponent,
+<<<<<<< HEAD
         AdduserComponent,
+=======
+>>>>>>> origin
        
     ]
 })
