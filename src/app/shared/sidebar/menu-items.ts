@@ -13,7 +13,7 @@ export const ROUTES: RouteInfo[] = [
         submenu: [
             {
                 path: '/forms/formbasic',
-                title: 'Add user',
+                title: '',
                 icon: '',
                 class: '',
                 label: '',
@@ -44,8 +44,8 @@ export const ROUTES: RouteInfo[] = [
             },
             {
 
-                path: '/component/typehead',
-                title: 'Form Typehead',
+                path: '/unitaval',
+                title: 'Unitaval',
                 icon: '',
                 class: '',
                 label: '',
@@ -126,6 +126,7 @@ export const ROUTES: RouteInfo[] = [
                 extralink: false,
                 submenu: []
             },
+          
             {
                 path: '/dashboard/dashboard3',
                 title: 'Analytical',
@@ -138,6 +139,30 @@ export const ROUTES: RouteInfo[] = [
             }
         ]
     },
+    {
+        path: '',
+        title: 'Unit Avalible',
+        icon: 'mdi mdi-home',
+        class: 'has-arrow',
+        label: '',
+        labelClass: 'label label-rouded label-themecolor',
+        extralink: false,
+        submenu: [
+            {
+                path: '/tables/unitaval2',
+                title: 'Add Unit',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            },
+           
+            
+        ]
+    },
+   
     {
         path: '',
         title: 'Alert',

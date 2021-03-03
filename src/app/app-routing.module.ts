@@ -7,11 +7,16 @@ import { BlankComponent } from './layouts/blank/blank.component';
 import{ImageViewComponent} from '../app/apps/image-view/image-view.component';
 import { Image2Component } from '../app/apps/image2/image2.component';
 import {ViewuserComponent} from '../app/viewuser/viewuser.component';
-
+import { UnitavalComponent } from './../app/unitAvaliblity/unitaval/unitaval.component';
 export const routes: Routes = [
     {
         path:'image-view',
         component: ImageViewComponent,
+    },
+    
+    {
+        path:'unitaval',
+        component: UnitavalComponent,
     },
     
 

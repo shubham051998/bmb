@@ -1,29 +1,46 @@
-<div class="container-fluid"  style="background-color: white; ">
-  <div class="submit-form">
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="background-color: white;">
+   <div class="submit-form">
      <div *ngIf="!submitted">
-        <div class="form row" style="padding-top: 2%;">
-           <div class="col-6">
-              <div class="form-group">
-                 <label for="name">Name</label>
-                 <div  class="input-group mb-3">
-                    <div  class="input-group-prepend">
-                       <span id="basic-addon22" class="input-group-text"><i  class="ti-user">
-                       </i></span>
-                    </div>
-                    <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    required
-                    [(ngModel)]="staff.name"
-                    name="name"
-                    />
-                 </div>
-              </div>
+      
+ 
+  
+     
+        
+         <div class="row" style="padding-top: 2%;">
+          <div class="col-6">
+           <div class="form-group">
+            <label for="name">Name</label>
+            <div  class="input-group mb-3">
+               <div  class="input-group-prepend">
+                  <span id="basic-addon22" class="input-group-text"><i  class="ti-user">
+                  </i></span>
+               </div>
+               <input
+               type="text"
+               class="form-control"
+               id="name"
+               required
+               [(ngModel)]="staff.name"
+               name="name"
+               />
+            </div>
            </div>
-           <div class="col-6">
-              <div class="form-group">
-                 <label for="phone">phone</label>
+
+          </div>
+          <div class="col-6">
+           <div class="form-group">
+            <label for="phone">phone</label>
                  <div  class="input-group mb-3">
                     <div  class="input-group-prepend">
                        <span id="basic-addon22" class="input-group-text"><i  class="ti-mobile">
@@ -37,12 +54,15 @@
                     name="phone"
                     />
                  </div>
-              </div>
            </div>
-        </div>
-       <div class="row">
-         <div class="col-6">
-            <div class="form-group">
+          </div>
+
+         </div>
+
+          </div>
+          <div class="row">
+            <div class="col-6">
+             <div class="form-group">
                <label for="email">email</label>
                <div  class="input-group mb-3">
                   <div  class="input-group-prepend">
@@ -57,10 +77,11 @@
                   name="email"
                   />
                </div>
+             </div>
+  
             </div>
-         </div>
-          <div class="col-6">
-            <div class="form-group">
+            <div class="col-6">
+             <div class="form-group">
                <label for="email">Status</label>
                <div  class="input-group mb-3">
                   <div  class="input-group-prepend">
@@ -75,63 +96,91 @@
                   name="email"
                   />
                </div>
+  
+  
+            </div>
+           </div>
+         </div>
+         <div class="row" style="padding-top: 2%;">
+            <div class="col-6">
+             <div class="form-group">
+               <label for="password">password</label>
+               <div  class="input-group mb-3">
+                  <div  class="input-group-prepend">
+                     <span id="basic-addon22" class="input-group-text"><i  class="ti-lock">
+                     </i></span>
+                  </div>
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="password"
+                  required
+                  [(ngModel)]="staff.password"
+                  name="password"
+                  />
+               </div>
+             </div>
+            </div>
+            <div class="col-6">
+             <div class="form-group">
+               <label for="status">Confirm Password</label>
+               <div  class="input-group mb-3">
+                  <div  class="input-group-prepend">
+                     <span id="basic-addon22" class="input-group-text"><i  class="ti-lock">
+                     </i></span>
+                  </div>
+                  <input
+                     type="text"
+                     class="form-control"
+                     id="1212"
+                     required
+                     name="cpassword"
+                     />
+               </div>
+             </div>
+      
             </div>
           </div>
-
-       </div>
-        <div class="row">
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="password">password</label>
+          <div class="row" style="padding-top: 2%;">
+            <div class="col-6">
+             <div class="form-group">
+               <label for="inputState">User Type</label>
+                       <select id="inputState"  [(ngModel)]=" staff.user_type" class="form-control">
+                          <option value="Admin" selected>Admin</option>
+                          <option value="Staff">Staff</option>
+                          <option  value="Builder">Builder</option>
+                          <option value="Agent">Agent</option>
+                          <option value="Business Associates">Business Associates</option>
+                       </select>
+             
+               
+             </div>
+            </div>
+            <div class="col-6">
+             <div class="form-group">
+               <label for="status">Remarks</label>
                        <div  class="input-group mb-3">
                           <div  class="input-group-prepend">
-                             <span id="basic-addon22" class="input-group-text"><i  class="ti-lock">
+                             <span id="basic-addon22" class="input-group-text"><i  class="icon-speech">
                              </i></span>
                           </div>
                           <input
                           type="text"
                           class="form-control"
-                          id="password"
+                          id="remarks"
                           required
-                          [(ngModel)]="staff.password"
-                          name="password"
+                          [(ngModel)]="staff.remarks"
+                          name="remarks"
                           />
                        </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="status">Confirm Password</label>
-                       <div  class="input-group mb-3">
-                          <div  class="input-group-prepend">
-                             <span id="basic-addon22" class="input-group-text"><i  class="ti-lock">
-                             </i></span>
-                          </div>
-                          <input
-                             type="text"
-                             class="form-control"
-                             id="1212"
-                             required
-                             name="cpassword"
-                             />
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <div class="row">
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="Image">Image</label>
+             </div>
+      
+            </div>
+          </div>
+          <div class="row" style="padding-top: 2%;">
+            <div class="col-6">
+             <div class="form-group">
+               <label for="Image">Image</label>
                        <div  class="input-group mb-3">
                           <div  class="input-group-prepend">
                              <span id="basic-addon22" class="input-group-text"><i  class="icon-picture">
@@ -146,86 +195,44 @@
                           name="Image" style="font-size: 12px;"
                           />
                        </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="Image">Upload document</label>
-                       <div  class="input-group mb-3">
-                          <div  class="input-group-prepend">
-                             <span id="basic-addon22" class="input-group-text"><i  class="icon-folder">
-                             </i></span>
-                          </div>
-                          <input
-                          type="file"
-                          class="form-control"
-                          id="document"
-                          required
-                          [(ngModel)]="staff.documents_url"
-                          name="Image" style="font-size: 12px;"
-                          />
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
+             </div>
+            </div>
+            <div class="col-6">
+             <div class="form-group">
+               <label for="Image">Upload document</label>
+               <div  class="input-group mb-3">
+                  <div  class="input-group-prepend">
+                     <span id="basic-addon22" class="input-group-text"><i  class="icon-folder">
+                     </i></span>
+                  </div>
+                  <input
+                  type="file"
+                  class="form-control"
+                  id="document"
+                  required
+                  [(ngModel)]="staff.documents_url"
+                  name="Image" style="font-size: 12px;"
+                  />
+               </div>
+             </div>
+      
+            </div>
+          </div>
+ 
+       <button (click)="createProduct()" class="btn btn-info" style="margin-bottom: 2%;">Submit</button>
      </div>
-     <div class="submit-form">
-        <div class="row">
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="inputState">User Type</label>
-                       <select id="inputState"  [(ngModel)]="user_type" class="form-control">
-                          <option value="Admin" selected>Admin</option>
-                          <option value="Staff">Staff</option>
-                          <option  value="Builder">Builder</option>
-                          <option value="Agent">Agent</option>
-                          <option value="Business Associates">Business Associates</option>
-                       </select>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="col-6">
-              <div class="submit-form">
-                 <div *ngIf="!submitted">
-                    <div class="form-group">
-                       <label for="status">Remark</label>
-                       <div  class="input-group mb-3">
-                          <div  class="input-group-prepend">
-                             <span id="basic-addon22" class="input-group-text"><i  class="icon-speech">
-                             </i></span>
-                          </div>
-                          <input
-                          type="text"
-                          class="form-control"
-                          id="remark"
-                          required
-                          [(ngModel)]="staff.remark"
-                          name="status"
-                          />
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
+ 
+     <div *ngIf="submitted">
+       <h3>You successfully created a User!</h3>
+       <button class="btn btn-success" (click)="newProduct()">New..</button>
      </div>
-  </div>
-  <div class="submit-form">
-     <div *ngIf="!submitted">
-     </div>
-     <button (click)="createProduct()" class="btn btn-success">Submit</button>
-  </div>
-  <div *ngIf="submitted">
-     <h3>You successfully created a product!</h3>
-     <button class="btn btn-success" (click)="newProduct()">New..</button>
-  </div>
-</div>
+   </div>
+ 
+
+
+
+
+
+
+
+

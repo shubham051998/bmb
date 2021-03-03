@@ -6,6 +6,9 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { TablesRoutes } from './tables.routing';
 import { DatatableComponent } from './data-table/data-table.component';
 import { BasicComponent } from './basic/basic.component';
+import { ViewunitComponent } from './viewunit/viewunit.component';
+import { FlatComponent } from './flat/flat.component';
+
 
 @NgModule({
     imports: [
@@ -13,6 +16,6 @@ import { BasicComponent } from './basic/basic.component';
         RouterModule.forChild(TablesRoutes),
         NgxDatatableModule,
     ],
-    declarations: [DatatableComponent, BasicComponent]
+    declarations: [DatatableComponent, BasicComponent, ViewunitComponent, FlatComponent, ]
 })
 export class TablesModule { }

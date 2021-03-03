@@ -27,6 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 import {ViewuserComponent2} from '../app/form/viewuser/viewuser2/viewuser2.component';
+import { UnitavalComponent } from './unitAvaliblity/unitaval/unitaval.component';
+import { Unitaval2Component } from './table/unitaval2/unitaval2.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     suppressScrollX: true,
@@ -44,7 +46,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
         BreadcrumbComponent,
         SidebarComponent,
         ViewuserComponent,
-        ViewuserComponent2
+        ViewuserComponent2,
+        UnitavalComponent,
+        Unitaval2Component,
+       
     ],
     imports: [
         CommonModule,
