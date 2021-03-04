@@ -8,6 +8,7 @@ import { DatatableComponent } from './data-table/data-table.component';
 import { BasicComponent } from './basic/basic.component';
 import { ViewunitComponent } from './viewunit/viewunit.component';
 import { FlatComponent } from './flat/flat.component';
+import { ViewflatComponent } from './viewflat/viewflat.component';
 
 
 @NgModule({
@@ -16,6 +17,6 @@ import { FlatComponent } from './flat/flat.component';
         RouterModule.forChild(TablesRoutes),
         NgxDatatableModule,
     ],
-    declarations: [DatatableComponent, BasicComponent, ViewunitComponent, FlatComponent, ]
+    declarations: [DatatableComponent, BasicComponent, ViewunitComponent, FlatComponent, ViewflatComponent, ]
 })
 export class TablesModule { }

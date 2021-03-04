@@ -141,7 +141,7 @@ export const ROUTES: RouteInfo[] = [
     },
     {
         path: '',
-        title: 'Unit Avalible',
+        title: 'Property',
         icon: 'mdi mdi-home',
         class: 'has-arrow',
         label: '',
@@ -149,8 +149,28 @@ export const ROUTES: RouteInfo[] = [
         extralink: false,
         submenu: [
             {
-                path: '/tables/unitaval2',
-                title: 'Add Unit',
+                path: '/tables/flat',
+                title: 'Add Property',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            },
+            {
+                path: '/tables/viewunit',
+                title: 'TEST',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            },
+            {
+                path: '/tables',
+                title: 'View Property',
                 icon: '',
                 class: '',
                 label: '',
