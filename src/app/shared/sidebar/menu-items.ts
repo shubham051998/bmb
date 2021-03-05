@@ -169,6 +169,16 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
+                path: '/tables/viewunit2',
+                title: 'TEST2',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            },
+            {
                 path: '/tables',
                 title: 'View Property',
                 icon: '',

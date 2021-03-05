@@ -4,6 +4,7 @@ import { DatatableComponent } from './data-table/data-table.component';
 import { BasicComponent } from './basic/basic.component';
 import {ViewunitComponent} from './viewunit/viewunit.component'
 import { FlatComponent } from './flat/flat.component';
+import { Viewunit2Component } from './viewunit2/viewunit2.component'
 export const TablesRoutes: Routes = [
     {
         path: '',
@@ -14,6 +15,17 @@ export const TablesRoutes: Routes = [
                 component: FlatComponent,
                 data: {
                     title: 'Flat',
+                    urls: [
+                        { title: 'Dashboard', url: '/dashboard' },
+                        { title: 'Flat' }
+                    ]
+                }
+            },
+            {
+                path: 'viewunit2',
+                component: Viewunit2Component,
+                data: {
+                    title: 'View Flat',
                     urls: [
                         { title: 'Dashboard', url: '/dashboard' },
                         { title: 'Flat' }
