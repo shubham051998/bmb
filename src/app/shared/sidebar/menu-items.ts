@@ -263,7 +263,7 @@ export const ROUTES: RouteInfo[] = [
         submenu: [
           
             {
-                path: '/apps/fullcalendar',
+                path: '/apps/Addbanner',
                 title: 'Add Banner',
                 icon: '',
                 class: '',

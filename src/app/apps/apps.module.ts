@@ -14,6 +14,7 @@ import { FullcalendarComponent } from './fullcalendar/fullcalendar.component';
 import { ImageViewComponent } from './image-view/image-view.component';
 import { Image2Component } from './image2/image2.component';
 import { AppModule } from '../app.module';
+import { AddbannerComponent } from './addbanner/addbanner.component';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { AppModule } from '../app.module';
         RouterModule.forChild(AppsRoutes)
     ],
  
-    declarations: [ FullcalendarComponent, ImageViewComponent, Image2Component,]
+    declarations: [ FullcalendarComponent, ImageViewComponent, Image2Component, AddbannerComponent,]
 
  
 })
