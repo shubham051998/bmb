@@ -1,0 +1,78 @@
+<div class="container" style="background-color: white;">
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+       
+  
+      <div class="row" style="padding-top: 2%;">
+       <div class="col-6">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="alert.title"
+            name="description"
+          />
+        </div>
+
+       </div>
+       <div class="col-6">
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="file"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="alert.image"
+            name="image" style="font-size: 12px; "
+          />
+        </div>
+
+       </div>
+
+      </div>
+          <div class="form-group">
+            <quill-editor  [(ngModel)]="alert.description" style="height: 600px;font-size:large;"></quill-editor>
+            <label for="description">description</label>
+            
+          </div>
+          <div class="row">
+           <div class="col-6">
+            <div class="form-group">
+              <label for=" hyper_link"> hyper link</label>
+              <input
+                class="form-control"
+                id=" hyper_link"
+                required
+                [(ngModel)]="alert.hyper_link"
+                name=" hyper_link"
+              />
+            </div>
+
+           </div>
+           <div class="col-6">
+            <div class="form-group">
+              <label for="posted_by">posted by</label>
+              <input
+                class="form-control"
+                id="posted_by"
+                required
+                [(ngModel)]="alert.posted_by"
+                name="posted_by"
+              />
+            </div>
+
+
+           </div>
+          </div>
+  
+        <button (click)="createProduct()" class="btn btn-info" style="margin-bottom: 2%;">Create</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h3>You successfully created a product!</h3>
+        <button class="btn btn-success" (click)="newProduct()">New..</button>
+      </div>
+    </div>
+  </div>

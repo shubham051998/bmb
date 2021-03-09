@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="background-color: white;">
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+       
+  
+   
+      
+         
+          <div class="row" style="padding-top: 2%;">
+           <div class="col-6">
+            <div class="form-group">
+             <label for="name">Title</label>
+             <div  class="input-group mb-3">
+                <div  class="input-group-prepend">
+                   <span id="basic-addon22" class="input-group-text"><i  class="ti-user">
+                   </i></span>
+                </div>
+                <input
+                type="text"
+                class="form-control"
+                id="title"
+                required
+                [(ngModel)]="banner.title"
+                name="title"
+                />
+             </div>
+            </div>
+ 
+           </div>
+           <div class="col-6">
+            <div class="form-group">
+             <label for="phone">Hyper link</label>
+                  <div  class="input-group mb-3">
+                     <div  class="input-group-prepend">
+                        <span id="basic-addon22" class="input-group-text"><i  class="ti-mobile">
+                        </i></span>
+                     </div>
+                     <input
+                     class="form-control"
+                     id="hyper_link"
+                     required
+                     [(ngModel)]="banner.hyper_link"
+                     name="hyper_link"
+                     />
+                  </div>
+            </div>
+           </div>
+ 
+          </div>
+ 
+           </div>
+   
+ 
+    
+           <div class="row" style="padding-top: 2%;">
+             <div class="col-6">
+              <div class="form-group">
+                <label for="Image">Image</label>
+                        <div  class="input-group mb-3">
+                           <div  class="input-group-prepend">
+                              <span id="basic-addon22" class="input-group-text"><i  class="icon-picture">
+                              </i></span>
+                           </div>
+                           <input
+                           type="file"
+                           class="form-control"
+                           id="image"
+                           required
+                           [(ngModel)]="banner.Image"
+                           name="Image" style="font-size: 12px;"
+                           />
+                        </div>
+              </div>
+             </div>
+      
+           </div>
+  
+        <button (click)="createProduct()" class="btn btn-info" style="margin-bottom: 2%;">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h3>You successfully created a User!</h3>
+        <button class="btn btn-success" (click)="newProduct()">New..</button>
+      </div>
+    </div>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

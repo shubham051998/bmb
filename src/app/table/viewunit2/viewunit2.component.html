@@ -1,0 +1,312 @@
+<style>
+    #head{
+        text-align: left;
+        font-size: medium;
+    }
+    #box:hover {
+        background: #a2f87a;
+        
+        background-color: #1ea83c;
+    
+    }
+    #box:visited a{
+        background-color: rgb(241, 128, 128);
+    }
+    hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    #box{
+        text-align: center;
+        align-items: center;
+
+        
+    }
+    #boxx{
+        
+        align-items: end;
+
+        
+    }
+    #list{
+        transform: translateX(-42px);
+    }
+    #box:hover p {
+        color: white;
+    }
+    
+    #F h4 {
+       padding-top: 4px;
+       padding-right: 10px;
+       font-size: medium;
+    }
+   #box p:visited {
+        color: pink;
+      }
+    #box p {
+        padding-top: 2.5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #1ea83c;
+    }
+    input[type="checkbox"][readonly] {
+        pointer-events: none;
+      }
+    #color-box{
+        height: 5px;
+        width: 5px;
+        color:blue;
+    }
+    #s1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      li {
+        float: left;
+        padding-right: 30px;
+        align-items: center;
+      }
+      ul{
+         text-align: center;
+      }
+</style>
+<script>
+    function hello() {
+        return (open2(content2));
+    }
+</script>
+
+<div class="container " style="background-color: rgb(255, 255, 255);padding-bottom:2%">
+    <div class="row" style="height: 50px; background-color:#f8ebc9;padding:2px" >
+        <div style="padding-left: 2%;">
+            <p style="padding-top: 4px;padding-left:10px;color:black; font-size:15px 600;">
+               Set no. of blocks/wings
+                <select id="inputState"  class="form-control" style="width: 130px;margin-left:32px; background:#f8ebc9;border:black 1px solid ; color:black;height: 10px;">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option  value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option  value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option  value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12 ">12</option>
+                 </select> 
+            </p>
+        </div>
+    </div>
+    <div class=" row flex-row-reverse" style="height: 50px; background-color:#ffffff; border-bottom:#f2f2f2 solid 1px ;text-align: center;padding-top:15px">
+        <div id="list" style="margin-left:none; ">
+            <ul style="list-style: none;display:block;float:left ;padding-left:none">
+                <li style="float: left;"><input style="margin-right: 5px;width:10px;height:10px;border:none;background:rgb(78, 139, 209)" type="box" >
+                 <label for="female">Booked</label><br></li>
+                 <li style="float: left;"><input style="margin-right: 5px;width:10px;height:10px;border:none;background:greenyellow" type="box" >
+                 <label for="female">Avalible</label><br></li>
+                  <li style="float: left;"><input style="margin-right: 5px;width:10px;height:10px;border:none; background:rgb(189, 191, 194)" type="box" >
+               <label for="female">Hold</label><br></li>
+               <li style="float: left;"><input style="margin-right: 5px;width:10px;height:10px;border:none;background:rgb(253, 4, 4)" type="box" >
+               <label for="female">Sold</label><br></li>
+            </ul>
+         
+         </div>
+      
+    </div>
+
+   
+    <div class="row" >
+        <div class="col"></div>
+        <div class="col-3">
+            <h4 id="head">Wing A</h4>
+          
+            <div class="row" id="boxx" >
+               
+                <div id="F" style="margin-right:2%;margin-left:4px;"><h4> F1</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+                   
+                   
+            </div>
+            <div class="row" id="boxx">
+               
+                <div id="F" style="margin-right:2%"><h4>F2</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+
+                
+               
+
+            </div>
+            <div class="row" id="boxx">
+               
+                <div id="F" style="margin-right:2%"><h4>F3</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+                
+               
+
+            </div>
+
+        </div>
+        <div class="col"></div>
+        <div class="col-3">
+            <h4 id="head">Wing B</h4>
+          
+            <div class="row" id="boxx" >
+               
+                <div id="F" style="margin-right:2%;margin-left:4px;"><h4> F1</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+                   
+            </div>
+            <div class="row"id="boxx">
+               
+                <div id="F" style="margin-right:2%"><h4>F2</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+            </div>
+            <div class="row"id="boxx" >
+               
+                <div id="F" style="margin-right:2%"><h4>F3</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+                
+               
+
+            </div>
+
+        </div>
+        <div class="col"></div>
+        <div class="col-3">
+            <h4 id="head">Wing C</h4>
+         
+            <div class="row" id="boxx" >
+               
+                <div id="F" style="margin-right:2%;margin-left:4px;"><h4> F1</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+                   
+                   
+            </div>
+            <div class="row" id="boxx">
+                
+                <div id="F" style="margin-right:2%"><h4>F2</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+               
+
+            </div>
+            <div class="row"id="boxx" >
+               
+                <div id="F" style="margin-right:2%"><h4>F3</h4></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%; "><p (click)="openVerticallyCentered(content2)">1</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">2</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">3</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">4</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">5</p></div>
+                <div id="box" style="width: 30px;height:30px;border:1px solid #1ea83c;margin-right:2%;border-radius:10%;"><p (click)="openVerticallyCentered(content2)">6</p></div>
+               
+
+            </div>
+
+        </div>
+        <div class="col"></div>
+
+    </div>
+</div>
+
+
+          
+            <ng-template #content2 let-modal>
+                <div class="modal-header" style="background-color: #1976d2;">
+                    <h4 class="modal-title" style="color: white;">Status And Description </h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')" style="border: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"><p>Flat Details &hellip;</p>
+                    <div id="list" style="margin-left:none; ">
+                        <ul style="list-style: none;display:block;float:left ;padding-left:none">
+                            <li style="float: left;"><input style="margin-right: 5px;" type="radio" class="radio " id="female" name="gender" value="female">
+                             <label for="female">Booked</label><br></li>
+                             <li style="float: left;"><input style="margin-right: 5px;" type="radio" id="female" name="gender" value="female">
+                             <label for="female">Avalible</label><br></li>
+                              <li style="float: left;"><input style="margin-right: 5px;" type="radio" id="female" name="gender" value="female">
+                           <label for="female">Hold</label><br></li>
+                           <li style="float: left;"><input style="margin-right: 5px;" type="radio" id="female" name="gender" value="female">
+                           <label for="female">Sold</label><br></li>
+                        </ul>
+                     
+                     </div>
+                     <br><br>
+                     <p style="color: #1976d2;">--------------------------------------------------------</p>
+                    <label>Size (  in sq. ft. ) </label>
+                <input  type="text" class="form-control"/><br>
+                
+                <label style="padding-top: 5px;">Dimension( LxB)
+                </label>
+                
+                <input  type="text" class="form-control"/><br>
+                <label style="padding-top: 5px;">Facing </label>
+                <select id="inputState"  class="form-control" >
+                    <option value="1" selected>East</option>
+                    <option value="2">West</option>
+                    <option  value="3">North</option>
+                    <option value="4">South</option>
+                    
+                 </select><br>
+                <div style="padding-left: 20px;padding-top:10px">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="padding-left: 20px;">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Garden
+                    </label><br><br>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="padding-left: 20px;">
+                    <label class="form-check-label" for="flexCheckDefault">
+                     Corner
+                    </label>
+                </div>
+               
+                </div>
+                
+                <div class="modal-footer"><button type="button" class="btn  btn-secondary" (click)="modal.dismiss('Cross click')">Submit</button></div>
+            </ng-template>
+
+            
+        
