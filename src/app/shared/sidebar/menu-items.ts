@@ -11,16 +11,7 @@ export const ROUTES: RouteInfo[] = [
         labelClass: '',
         extralink: false,
         submenu: [
-            {
-                path: '/forms/formbasic',
-                title: '',
-                icon: '',
-                class: '',
-                label: '',
-                labelClass: '',
-                extralink: false,
-                submenu: []
-            },
+            
             {
                 path: '/forms/viewuser2',
                 title: 'View User',
@@ -42,17 +33,7 @@ export const ROUTES: RouteInfo[] = [
                 extralink: false,
                 submenu: []
             },
-            {
-
-                path: '/unitaval',
-                title: 'Unitaval',
-                icon: '',
-                class: '',
-                label: '',
-                labelClass: '',
-                extralink: false,
-                submenu: []
-            },
+           
             {
                 path: '/component/datepicker',
                 title: 'Datepicker',
@@ -188,6 +169,16 @@ export const ROUTES: RouteInfo[] = [
                 extralink: false,
                 submenu: []
             },
+            {
+                path: '/tables/plot',
+                title: 'plot',
+                icon: '',
+                class: '',
+                label: '',
+                labelClass: '',
+                extralink: false,
+                submenu: []
+            },
            
             
         ]
@@ -203,16 +194,7 @@ export const ROUTES: RouteInfo[] = [
         extralink: false,
         submenu: [
            
-            {
-                path: '/extra-component/editor',
-                title: 'editor',
-                icon: '',
-                class: '',
-                label: '',
-                labelClass: '',
-                extralink: false,
-                submenu: []
-            },
+            
             {
                 path: '/extra-component/addalert',
                 title: 'Add Alert',
@@ -235,19 +217,6 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
 
-           
-          
-
-            {
-                path: '/extra-component/dragndrop',
-                title: 'Drag n Drop',
-                icon: '',
-                class: '',
-                label: '',
-                labelClass: '',
-                extralink: false,
-                submenu: []
-            }
 
         ]
     },
@@ -273,7 +242,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/taskboard',
+                path: '/apps/viewbanner',
                 title: 'View Banner',
                 icon: '',
                 class: '',
@@ -282,16 +251,7 @@ export const ROUTES: RouteInfo[] = [
                 extralink: false,
                 submenu: []
             },
-            {
-                path: '/apps/email',
-                title: 'Mailbox',
-                icon: '',
-                class: '',
-                label: '',
-                labelClass: '',
-                extralink: false,
-                submenu: []
-            },
+            
         ]
     },
     {

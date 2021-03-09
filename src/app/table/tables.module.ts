@@ -10,7 +10,7 @@ import { ViewunitComponent } from './viewunit/viewunit.component';
 import { FlatComponent } from './flat/flat.component';
 import { ViewflatComponent } from './viewflat/viewflat.component';
 import { Viewunit2Component } from './viewunit2/viewunit2.component';
-
+import {PlotComponent} from './plot/plot.component';
 
 @NgModule({
     imports: [
@@ -19,6 +19,6 @@ import { Viewunit2Component } from './viewunit2/viewunit2.component';
         NgxDatatableModule,
         FormsModule,
     ],
-    declarations: [DatatableComponent, BasicComponent, ViewunitComponent, FlatComponent, ViewflatComponent, Viewunit2Component, ]
+    declarations: [DatatableComponent, BasicComponent, ViewunitComponent, FlatComponent, ViewflatComponent, Viewunit2Component,PlotComponent ]
 })
 export class TablesModule { }
